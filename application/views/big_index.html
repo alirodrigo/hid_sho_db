@@ -148,15 +148,16 @@
         url:  '/hid_sho_db/index.php/welcome/update',
         type: 'POST',
         data: 'check_in='+check_in
-              }
+              });
       // alert("hola");
+      }else{
+      var check_in = $('0').val();
+      $.ajax({
+        url:  '/hid_sho_db/index.php/welcome/update',
+        type: 'POST',
+        data: 'check_in='+check_in
+              });
       }
-      // var check_in = $('0').val();
-      // $.ajax({
-      //   url:  '/hid_sho_db/index.php/welcome/update',
-      //   type: 'POST',
-      //   data: 'check_in='+check_in
-      //         }
       });
   </script>
 </body>
